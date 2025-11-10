@@ -19,7 +19,10 @@ step "test" {
     action {
         action_type = "Octopus.Script"
         properties = {
-            Octopus.Action.Script.ScriptBody = "echo \"test\""
+            Octopus.Action.Script.ScriptBody = <<-EOT
+                echo "test"
+                ls
+                EOT
             Octopus.Action.Script.ScriptSource = "Inline"
             Octopus.Action.Script.Syntax = "Bash"
             OctopusUseBundledTooling = "False"

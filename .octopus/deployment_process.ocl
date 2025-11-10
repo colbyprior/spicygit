@@ -14,7 +14,7 @@ step "run-a-script" {
         packages "spicygit" {
             acquisition_location = "Server"
             feed = "test"
-            package_id = "colbyprior/spicygit"
+            package_id = "octocolby/spicygit"
             properties = {
                 Extract = "True"
                 SelectionMode = "immediate"
